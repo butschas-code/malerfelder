@@ -7,20 +7,14 @@ import { COMPANY, SERVICE_AREA } from "@/lib/data/content";
 
 export function ContactCTA() {
   return (
-<<<<<<< HEAD
     <section className="py-12 sm:py-16 lg:py-24 bg-[#002146] text-white relative overflow-hidden">
-=======
-    <section className="py-16 lg:py-24 bg-[rgb(var(--brand2))] text-white relative overflow-hidden">
->>>>>>> origin/main
+
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[rgb(var(--brand))]/20 via-transparent to-blue-600/20" />
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<<<<<<< HEAD
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
-=======
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
->>>>>>> origin/main
+
           {/* Left: CTA Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -37,17 +31,13 @@ export function ContactCTA() {
               Kontakt
             </motion.span>
 
-<<<<<<< HEAD
             <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-3 sm:mb-4">
-=======
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4">
->>>>>>> origin/main
+
               Bereit für Ihr{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">
                 Projekt?
               </span>
             </h2>
-<<<<<<< HEAD
             <p className="text-base sm:text-lg text-white/70 mb-6 sm:mb-8 max-w-lg">
               Möchten Sie Ihr nächstes Projekt umsetzen? Melden Sie sich! Wir helfen Ihnen gerne und unkompliziert weiter.
             </p>
@@ -57,34 +47,18 @@ export function ContactCTA() {
                 <Link
                   href="/kontakt"
                   className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-[rgb(var(--brand2))] bg-white hover:bg-[rgb(var(--paper))] rounded-full transition-all duration-200 shadow-lg w-full sm:w-auto"
-=======
-            <p className="text-lg text-white/70 mb-8 max-w-lg">
-              Möchten Sie Ihr nächstes Projekt umsetzen? Melden Sie sich! Wir helfen Ihnen gerne und unkompliziert weiter.
-            </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Link
-                  href="/kontakt"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-[rgb(var(--brand2))] bg-white hover:bg-[rgb(var(--paper))] rounded-full transition-all duration-200 shadow-lg"
->>>>>>> origin/main
                 >
                   <span>Offerte anfragen</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </motion.div>
 
-<<<<<<< HEAD
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
                 <a
                   href={`tel:${COMPANY.contact.phoneLink}`}
                   className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white border-2 border-white/40 hover:border-white/60 hover:bg-white/10 rounded-full transition-all duration-200 w-full sm:w-auto"
-=======
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <a
-                  href={`tel:${COMPANY.contact.phoneLink}`}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white border-2 border-white/40 hover:border-white/60 hover:bg-white/10 rounded-full transition-all duration-200"
->>>>>>> origin/main
+
                 >
                   <Phone className="w-5 h-5" />
                   <span>{COMPANY.contact.phone}</span>

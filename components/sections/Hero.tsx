@@ -20,18 +20,10 @@ export function Hero() {
         >
           <source src="/hero-loop.mp4" type="video/mp4" />
         </video>
-<<<<<<< HEAD
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20">
-=======
-        {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-[rgb(var(--brand2))]/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--brand2))]/80 via-transparent to-transparent" />
-      </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
->>>>>>> origin/main
         <div className="max-w-2xl">
           {/* Content */}
           <motion.div
@@ -58,25 +50,18 @@ export function Hero() {
             </motion.div>
 
             {/* Headline */}
-<<<<<<< HEAD
             <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white leading-[1.1] mb-4 sm:mb-6">
-=======
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white leading-[1.1] mb-6">
->>>>>>> origin/main
+
               {HOME.hero.headline}
             </h1>
 
             {/* Subheadline */}
-<<<<<<< HEAD
             <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-6 sm:mb-8 max-w-xl">
-=======
-            <p className="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-xl">
->>>>>>> origin/main
+
               {HOME.hero.subheadline}
             </p>
 
             {/* CTAs */}
-<<<<<<< HEAD
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <motion.div
                 whileHover={{ scale: 1.02 }}
@@ -86,16 +71,7 @@ export function Hero() {
                 <Link
                   href="/kontakt"
                   className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-full transition-all duration-300 shadow-lg shadow-orange-500/40 hover:shadow-xl hover:shadow-orange-500/50 w-full sm:w-auto"
-=======
-            <div className="flex flex-col sm:flex-row gap-4">
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Link
-                  href="/kontakt"
-                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-full transition-all duration-300 shadow-lg shadow-orange-500/40 hover:shadow-xl hover:shadow-orange-500/50"
->>>>>>> origin/main
+
                 >
                   <span>Offerte anfragen</span>
                   <motion.div
@@ -110,11 +86,8 @@ export function Hero() {
                 href={`tel:${COMPANY.contact.phoneLink}`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-<<<<<<< HEAD
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white bg-[#2e4583]/80 hover:bg-[#2e4583] backdrop-blur-sm rounded-full transition-all duration-300 border border-[#2e4583]/50 hover:border-[#2e4583] shadow-lg hover:shadow-xl hover:shadow-[#2e4583]/30 w-full sm:w-auto"
-=======
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-[#2e4583]/80 hover:bg-[#2e4583] backdrop-blur-sm rounded-full transition-all duration-300 border border-[#2e4583]/50 hover:border-[#2e4583] shadow-lg hover:shadow-xl hover:shadow-[#2e4583]/30"
->>>>>>> origin/main
+
               >
                 <motion.div
                   animate={{ rotate: [0, 10, -10, 0] }}

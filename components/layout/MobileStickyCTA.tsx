@@ -6,11 +6,8 @@ import { COMPANY } from "@/lib/data/content";
 
 export function MobileStickyCTA() {
   return (
-<<<<<<< HEAD
     <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-white border-t border-[rgb(var(--line))] shadow-apple-large">
-=======
-    <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-white border-t border-[rgb(var(--line))] shadow-apple-large">
->>>>>>> origin/main
+
       <div className="flex items-center justify-between px-4 py-3">
         {/* Phone */}
         <a

@@ -8,15 +8,10 @@ import { Award, Calendar } from "lucide-react";
 
 export function AboutPreview() {
   return (
-<<<<<<< HEAD
     <section className="py-12 sm:py-16 lg:py-24 bg-[rgb(var(--paper))]">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
-=======
-    <section className="py-16 lg:py-24 bg-[rgb(var(--paper))]">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
->>>>>>> origin/main
+
           {/* Left: Image */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -27,13 +22,9 @@ export function AboutPreview() {
           >
             <div className="relative aspect-[4/3] rounded-2xl lg:rounded-3xl overflow-hidden shadow-apple-large">
               <Image
-<<<<<<< HEAD
                 src="/patrick-felder.png"
                 alt="Patrick Felder"
-=======
-                src={UNSPLASH_IMAGES.about.craftsman.url}
-                alt={UNSPLASH_IMAGES.about.craftsman.alt}
->>>>>>> origin/main
+
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -41,20 +32,7 @@ export function AboutPreview() {
               <div className="absolute inset-0 bg-gradient-to-tr from-[rgb(var(--brand2))]/10 via-transparent to-transparent" />
             </div>
 
-<<<<<<< HEAD
-=======
-            {/* Floating experience card */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="absolute -bottom-6 -right-6 lg:bottom-8 lg:-right-8 bg-[rgb(var(--brand))] text-white rounded-2xl p-6 shadow-apple-large"
-            >
-              <p className="font-heading text-3xl font-bold">{COMPANY.experience.yearsTotal}+</p>
-              <p className="text-sm text-white/90">Jahre Erfahrung</p>
-            </motion.div>
->>>>>>> origin/main
+
           </motion.div>
 
           {/* Right: Content */}
@@ -75,11 +53,8 @@ export function AboutPreview() {
               Über mich
             </motion.span>
 
-<<<<<<< HEAD
             <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#002146] mb-3 sm:mb-4">
-=======
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#2e4583] mb-4">
->>>>>>> origin/main
+
               {ABOUT.person.name}
             </h2>
             <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 font-medium mb-6">
@@ -100,11 +75,8 @@ export function AboutPreview() {
                 <Calendar className="w-4 h-4" />
                 <span>Werdegang</span>
               </div>
-<<<<<<< HEAD
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-=======
-              <div className="grid grid-cols-2 gap-4">
->>>>>>> origin/main
+
                 {ABOUT.timeline.slice(0, 4).map((item, index) => (
                   <motion.div
                     key={index}

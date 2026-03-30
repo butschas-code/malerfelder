@@ -224,11 +224,8 @@ export function Gallery() {
             <span className="inline-block px-3 py-1 text-xs font-medium bg-[rgb(var(--brand))]/10 text-[rgb(var(--brand-dark))] rounded-full mb-4">
               Galerie
             </span>
-<<<<<<< HEAD
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#002146]">
-=======
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-[rgb(var(--ink))]">
->>>>>>> origin/main
+
               Arbeiten, keine Renderings
             </h2>
             <p className="text-lg text-[rgb(var(--ink-muted))] mt-4 max-w-xl">

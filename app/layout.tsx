@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { COMPANY } from "@/lib/data/content";
-<<<<<<< HEAD
 import { CookieBanner } from "@/components/layout/CookieBanner";
-=======
->>>>>>> origin/main
 
 export const metadata: Metadata = {
   title: `${COMPANY.name} - Malerarbeiten im Raum Luzern`,
@@ -35,10 +32,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[rgb(var(--paper))] text-[rgb(var(--ink))]">
         {children}
-<<<<<<< HEAD
         <CookieBanner />
-=======
->>>>>>> origin/main
       </body>
     </html>
   );
