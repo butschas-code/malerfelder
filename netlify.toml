@@ -1,0 +1,41 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/dienstleistungen"
+  to = "/dienstleistungen/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ueber-mich"
+  to = "/ueber-mich/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/kontakt/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/bewertungen"
+  to = "/bewertungen/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/impressum"
+  to = "/impressum/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/datenschutzerklaerung"
+  to = "/datenschutzerklaerung/index.html"
+  status = 200

@@ -1,26 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Paper (Background) - Apple style cool grey */
+  --paper: 251 251 253;
+  --paper-dark: 245 245 247;
+  --background: #fbfbfd;
+  
+  /* Ink (Text) - Apple style near-black */
+  --ink: 29 29 31;
+  --ink-muted: 134 134 139;
+  --foreground: #1d1d1f;
+  
+  /* Brand Primary - Keep the blue */
+  --brand: 46 69 131;
+  --brand-light: 61 90 158;
+  --brand-dark: 31 50 102;
+  
+  /* Brand Secondary */
+  --brand2: 29 29 31;
+  --brand2-light: 85 85 89;
+  
+  /* Muted tones - Apple grey */
+  --muted: 134 134 139;
+  --muted-light: 210 210 215;
+  
+  /* Line/Borders */
+  --line: 210 210 215;
+  
+  /* Shadow */
+  --shadow: 29 29 31;
+  
+  /* Typography - Apple SF Pro style with Inter */
+  --font-heading: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
 }
 
 @theme inline {
+  /* Colors */
+  --color-paper: rgb(var(--paper));
+  --color-paper-dark: rgb(var(--paper-dark));
+  --color-ink: rgb(var(--ink));
+  --color-ink-muted: rgb(var(--ink-muted));
+  --color-brand: rgb(var(--brand));
+  --color-brand-light: rgb(var(--brand-light));
+  --color-brand-dark: rgb(var(--brand-dark));
+  --color-brand2: rgb(var(--brand2));
+  --color-brand2-light: rgb(var(--brand2-light));
+  --color-muted: rgb(var(--muted));
+  --color-line: rgb(var(--line));
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Fonts */
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base styles */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Typography - Apple.com style */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Body text */
+p, li, span {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* Selection */
+::selection {
+  background: rgba(var(--brand), 0.2);
+  color: rgb(var(--ink));
+}
+
+/* Focus states */
+:focus-visible {
+  outline: 2px solid rgb(var(--brand));
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar - Apple style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--muted), 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--muted));
+}
+
+/* Smooth scroll padding for fixed header */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Utility classes for the design system */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-display {
+    font-family: var(--font-heading);
+  }
+  
+  .font-body {
+    font-family: var(--font-body);
+  }
+  
+  /* Apple-inspired tight tracking for headlines */
+  .tracking-tight-apple {
+    letter-spacing: -0.035em;
+  }
+  
+  .tracking-tighter-apple {
+    letter-spacing: -0.045em;
+  }
+  
+  /* Apple-inspired card shadows */
+  .shadow-apple {
+    box-shadow: 0 2px 12px rgba(var(--shadow), 0.08);
+  }
+  
+  .shadow-apple-medium {
+    box-shadow: 0 4px 24px rgba(var(--shadow), 0.1);
+  }
+  
+  .shadow-apple-large {
+    box-shadow: 0 8px 32px rgba(var(--shadow), 0.12);
+  }
+  
+  /* Texture overlays */
+  .texture-paper {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+  }
+  
+  /* Brush stroke divider SVG */
+  .brush-divider {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 20' preserveAspectRatio='none'%3E%3Cpath d='M0,10 Q300,0 600,10 T1200,10' stroke='rgb(var(--brand))' stroke-width='1' fill='none' opacity='0.3'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
