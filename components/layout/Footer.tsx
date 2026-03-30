@@ -12,8 +12,13 @@ export function Footer() {
   return (
     <footer className="bg-white text-[rgb(var(--ink))]">
       {/* Main Footer */}
+<<<<<<< HEAD
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16">
+=======
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+>>>>>>> origin/main
           {/* Left: Company Info & Contact */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -85,7 +90,11 @@ export function Footer() {
           </motion.div>
 
           {/* Right: Map & Navigation */}
+<<<<<<< HEAD
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+=======
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+>>>>>>> origin/main
             {/* Map */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -138,7 +147,11 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-[rgb(var(--line))]">
+<<<<<<< HEAD
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-6">
+=======
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+>>>>>>> origin/main
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-[rgb(var(--ink-muted))]">
               © {currentYear} {COMPANY.name}

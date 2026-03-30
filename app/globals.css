@@ -137,6 +137,7 @@ p, li, span {
 
 /* Smooth scroll padding for fixed header */
 html {
+<<<<<<< HEAD
   scroll-padding-top: 64px;
 }
 
@@ -144,6 +145,9 @@ html {
   html {
     scroll-padding-top: 80px;
   }
+=======
+  scroll-padding-top: 80px;
+>>>>>>> origin/main
 }
 
 /* Utility classes for the design system */
